@@ -18,3 +18,6 @@ function getDatabaseDataAndShowOnWebsite() {
       );
     });
 }
+
+
+print("hello world ")
