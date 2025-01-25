@@ -88,28 +88,28 @@
       <form action="" id="profileForm">
         <div class="column-left">
           <label for="firstName">First Name: </label>
-          <input type="text" name="firstName" id="firstName" />
+          <input type="text" name="firstName" id="firstName" required/>
 
           <label for="lastName">Last Name: </label>
-          <input type="text" name="lastName" id="lastName" />
+          <input type="text" name="lastName" id="lastName" required/>
 
           <label for="pronouns">Pronouns: </label>
-          <input type="text" name="pronouns" id="pronouns" />
+          <input type="text" name="pronouns" id="pronouns" required/>
 
           <label for="email">Email: </label>
-          <input type="text" name="email" id="email" />
+          <input type="text" name="email" id="email" required/>
 
           <label for="phone">Phone Number: </label>
-          <input type="text" name="phone" id="phone" />
+          <input type="text" name="phone" id="phone" required/>
 
           <label for="city">City: </label>
-          <input type="text" name="city" id="city" />
+          <input type="text" name="city" id="city" required/>
 
           <label for="state">State: </label>
-          <input type="text" name="state" id="state" />
+          <input type="text" name="state" id="state" required/>
 
           <label for="language">Language: </label>
-          <select name="language" id="language">
+          <select name="language" id="language" required>
             <option value="english">English</option>
             <option value="spanish">Spanish</option>
             <option value="hindi">Hindi</option>
@@ -134,6 +134,7 @@
             name="experienceLevel"
             id="experienceLevel"
             style="margin-bottom: 10px"
+            required
           >
             <option value="first-time buyer">First-Time Buyer</option>
             <option value="experienced buyer">Experienced Buyer</option>
@@ -141,7 +142,7 @@
           </select>
 
           <label for="timeline">Timeline: </label>
-          <select name="timeline" id="timeline" style="margin-bottom: 10px">
+          <select name="timeline" id="timeline" style="margin-bottom: 10px" required>
             <option value="immediate (0-3m)">Immediate (0 - 3 months)</option>
             <option value="medium-long (3-12m)">
               Medium - Long (3 - 12 months)
@@ -158,6 +159,7 @@
             id="personality"
             multiple
             style="margin-bottom: 10px"
+            required
           >
             <option value="knowlegeable">Knowlegeable</option>
             <option value="confrontational">Confrontational</option>
@@ -174,30 +176,30 @@
           <label for="propertyType">Property Type</label>
           <div class="multi-select">
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="luxury" />
+              ><input type="checkbox" name="propertyType" value="luxury" required/>
               Luxury</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="condo" /> Condo
+              ><input type="checkbox" name="propertyType" value="condo" required/> Condo
             </label>
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="townhouse" />
+              ><input type="checkbox" name="propertyType" value="townhouse" required/>
               Townhouse</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="apartment" />
+              ><input type="checkbox" name="propertyType" value="apartment" required/>
               Apartment</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="single" />
+              ><input type="checkbox" name="propertyType" value="single" required/>
               Single</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="multi" />
+              ><input type="checkbox" name="propertyType" value="multi" required/>
               Married</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="propertyType" value="multi" />
+              ><input type="checkbox" name="propertyType" value="multi" required/>
               Family</label
             >
           </div>
@@ -207,15 +209,15 @@
           <label for="lifestylePreferences">Lifestyle Preferences</label>
           <div class="multi-select">
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="urban" />
+              ><input type="checkbox" name="lifestyle" value="urban" required/>
               Urban</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="suburban" />
+              ><input type="checkbox" name="lifestyle" value="suburban" required/>
               Suburban</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="rural" />
+              ><input type="checkbox" name="lifestyle" value="rural" required/>
               Rural</label
             >
             <label style="font-weight: normal"
@@ -223,6 +225,7 @@
                 type="checkbox"
                 name="lifestyle"
                 value="near schools and parks"
+                required
               />
               Near Schools and Parks</label
             >
@@ -231,11 +234,12 @@
                 type="checkbox"
                 name="lifestyle"
                 value="commute-friendly"
+                required
               />
               Commute-Friendly</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="pet-friendly" />
+              ><input type="checkbox" name="lifestyle" value="pet-friendly" required/>
               Pet-friendly</label
             >
             <label style="font-weight: normal"
@@ -243,6 +247,7 @@
                 type="checkbox"
                 name="lifestyle"
                 value="near shopping and dining"
+                required
               />
               Near Shopping and Dining</label
             >
