@@ -7,6 +7,43 @@
         <title> Client Profile Form</title>
         <style>
 
+            body {
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color:lightblue;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .form-container {
+                margin: 0 20px;
+                
+            }
+
+            form {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 20px;
+                display: flex;
+            }
+
+            .column-left {
+                flex: 1;
+                padding-right: 20px;
+            }
+
+            .column-right {
+                flex: 1;
+                padding-right: 20px;
+            }
+
 
         </style>
     </head>
@@ -14,14 +51,16 @@
         <div class="form-container">
             <form action="" id="profileform">
                 <div class="column-left">
-                    <label for="firstname">First Name: </label>
-                    <input type = "text" name="firstname" id="firstname" >
+                    <label for="firstName">First Name: </label>
+                    <input type = "text" name="firstName" id="firstName" >
 
-                    <label for="lastname">Last Name: </label>
-                    <input type = "text" name="lastname" id="lastname" >
+                    <label for="lastName">Last Name: </label>
+                    <input type = "text" name="lastName" id="lastName" >
 
                     <label for="pronouns">Pronouns: </label>
                     <input type = "text" name="pronouns" id="pronouns" >
+
+                    <button type="button" onclick="submitForm()">Submit</button>
 
                 </div>
 
@@ -37,6 +76,13 @@
                       <label><input type="checkbox" name="specialization" value="family"> Family</label>
                     </div>
                   </div>
+
+                <div class=" column-right">
+                    <label for="photo">Profile Picture</label>
+                    <input type="file" name="photo" id="photo" 
+                    onchange="displayProfilePic()">
+                    <img src="#" alt="Profile Picture" style="display: none;" id="profilePic">
+                </div>
             </form>
         </div>
 
