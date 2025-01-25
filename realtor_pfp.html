@@ -122,7 +122,7 @@
           </select>
 
           <label for="timeine">Timeline:</label>
-          <select name="timeline" id="timeline" style="margin-bottom: 10px">
+          <select name="timeline" id="timeline" style="margin-bottom: 10px" required>
             <option value="immediate">Immediate (0-3mon)</option>
             <option value="medium-long">Medium-Long (3-12mon)</option>
             <option value="future">Future (12+)</option>
@@ -130,7 +130,7 @@
           </select>
 
           <label for="language">Language:</label>
-          <select name="Language" id="language" style="margin-bottom: 10px">
+          <select name="Language" id="language" style="margin-bottom: 10px" required>
             <option value="english">English</option>
             <option value="spanish">Spanish</option>
             <option value="hindi">Hindi</option>
@@ -139,7 +139,7 @@
           </select>
 
           <label for="lifestyle">Lifestyle Preferences:</label>
-          <select name="lifestyle" id="lifestyle" style="margin-bottom: 10px">
+          <select name="lifestyle" id="lifestyle" style="margin-bottom: 10px" required>
             <option value="urban">Urban</option>
             <option value="suburban">Suburban</option>
             <option value="rural">Rural</option>
@@ -155,6 +155,7 @@
             id="personality"
             multiple
             style="margin-bottom: 10px"
+            required
           >
             <option value="knowlegeable">Knowlegeable</option>
             <option value="confrontational">Confrontational</option>
@@ -173,31 +174,31 @@
           <label for="propertyType">Property Type:</label>
           <div class="multi-select">
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="luxury" />
+              ><input type="checkbox" name="specialization" value="luxury" required/>
               Luxury</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="condo" />
+              ><input type="checkbox" name="specialization" value="condo" required/>
               Condo
             </label>
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="townhouse" />
+              ><input type="checkbox" name="specialization" value="townhouse" required/>
               Townhouse</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="apartment" />
+              ><input type="checkbox" name="specialization" value="apartment" required/>
               Apartment</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="single" />
+              ><input type="checkbox" name="specialization" value="single" required/>
               Single</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="multi" />
+              ><input type="checkbox" name="specialization" value="multi" required/>
               Married</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="specialization" value="multi" />
+              ><input type="checkbox" name="specialization" value="multi" required/>
               Family</label
             >
           </div>
@@ -207,15 +208,15 @@
           <label for="lifestylePreferences">Lifestyle Preferences</label>
           <div class="multi-select">
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="urban" />
+              ><input type="checkbox" name="lifestyle" value="urban" required/>
               Urban</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="suburban" />
+              ><input type="checkbox" name="lifestyle" value="suburban" required/>
               Suburban</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="rural" />
+              ><input type="checkbox" name="lifestyle" value="rural" required/>
               Rural</label
             >
             <label style="font-weight: normal"
@@ -223,6 +224,7 @@
                 type="checkbox"
                 name="lifestyle"
                 value="near schools and parks"
+                required
               />
               Near Schools and Parks</label
             >
@@ -231,11 +233,12 @@
                 type="checkbox"
                 name="lifestyle"
                 value="commute-friendly"
+                required
               />
               Commuter Friendly</label
             >
             <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="pet-friendly" />
+              ><input type="checkbox" name="lifestyle" value="pet-friendly" required/>
               Pet-friendly</label
             >
             <label style="font-weight: normal"
@@ -243,6 +246,7 @@
                 type="checkbox"
                 name="lifestyle"
                 value="near shopping and dining"
+                required
               />
               Near Shopping and Dining</label
             >
@@ -256,6 +260,7 @@
             name="photo"
             id="photo"
             onchange="displayProfilePic()"
+            required
           />
           <img
             src="#"
