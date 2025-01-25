@@ -55,5 +55,6 @@ function getClients() {
 
       // Insert the generated HTML content into the element with id "display"
       document.getElementById("display").innerHTML = htmlContent;
+
 });
 }
