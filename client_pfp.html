@@ -9,7 +9,7 @@
 
             body {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                background-color:lightgray;
+                background-color:f5f5f5;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -21,20 +21,20 @@
 
             
             .form-container {
-                margin: 5px 20px;
+                margin: 0px 20px;
                 
             }
             
 
             form {
-                background-color: white;
+                background-color: #f5f5f5;
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 padding: 20px;
                 width: 100%;
                 box-sizing: border-box;
                 margin-top: 20px;
-                display: flex; 
+                display: flex;
                 
             }
 
@@ -139,17 +139,20 @@
                 <div class="column-middle1">
 
                     <label for="budget">Budget: </label>
-                    <input type = "text" name="budget" id="budget" >
+                    <input type = "text" name="budget" id="budget" 
+                    style="margin-bottom: 10px">
 
                     <label for="experienceLevel">Experience Level: </label>
-                    <select name="experienceLevel" id="experienceLevel">
+                    <select name="experienceLevel" id="experienceLevel" 
+                    style="margin-bottom: 10px">
                         <option value="first-time buyer"> First-Time Buyer</option>
                         <option value="experienced buyer"> Experienced Buyer</option>
                         <option value="investment properties"> Investment Properties</option>
                     </select>
 
                     <label for="timeline">Timeline: </label>
-                    <select name="timeline" id="timeline">
+                    <select name="timeline" id="timeline" 
+                    style="margin-bottom: 10px">
                         <option value="immediate (0-3m)"> Immediate (0 - 3 months)</option>
                         <option value="medium-long (3-12m)"> Medium - Long (3 - 12 months)</option>
                         <option value="future (12+)"> Future (12+) </option>
@@ -157,7 +160,8 @@
                     </select>
 
                     <label for="personality">Your Realtor's Personality (Select 3):</label>
-                    <select name="personality" id="personality" multiple">
+                    <select name="personality" id="personality" multiple 
+                    style="margin-bottom: 10px">
                       <option value="knowlegeable">Knowlegeable</option>
                       <option value="confrontational">Confrontational</option>
                       <option value="enthusiastic">Enthusiastic</option>
@@ -172,23 +176,6 @@
                 
 
                 <div class="column-middle2">
-                    <label for="lifestylePreferences">Lifestyle Preferences</label>
-                    <div class="multi-select">
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="urban"> Urban</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="suburban"> Suburban</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="rural"> Rural</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="near schools and parks"> Near Schools and Parks</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="commute-friendly"> Commute-Friendly</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="pet-friendly"> Pet-friendly</label>
-                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="near shopping and dining"> Near Shopping and Dining</label>
-
-                    </div>
-                </div>
-            
-
-            
-
-                <div class = "middle3">
 
                     <label for="propertyType">Property Type</label>
                     <div class="multi-select">
@@ -199,6 +186,25 @@
                       <label style="font-weight: normal;"><input type="checkbox" name="propertyType" value="single"> Single</label>
                       <label style="font-weight: normal;"><input type="checkbox" name="propertyType" value="multi"> Married</label>
                       <label style="font-weight: normal;"><input type="checkbox" name="propertyType" value="multi"> Family</label>
+                    </div>
+                    
+                </div>
+            
+
+            
+
+                <div class = "middle3">
+
+                    <label for="lifestylePreferences">Lifestyle Preferences</label>
+                    <div class="multi-select">
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="urban"> Urban</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="suburban"> Suburban</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="rural"> Rural</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="near schools and parks"> Near Schools and Parks</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="commute-friendly"> Commute-Friendly</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="pet-friendly"> Pet-friendly</label>
+                      <label style="font-weight: normal;"><input type="checkbox" name="lifestyle" value="near shopping and dining"> Near Shopping and Dining</label>
+
                     </div>
                     
                     </div>
