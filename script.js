@@ -13,7 +13,7 @@ function getDatabaseDataAndShowOnWebsite() {
     //
     .then((response) => {
       document.getElementById("display").innerHTML = JSON.stringify(
-        response.realtors
+        response
       );
     });
 }
