@@ -7,7 +7,6 @@ body {
   padding: 40px;
   background-color: green;
   height: 200px;
-  transition: background-color 2s, height 500ms;
 }
 
 .btn:hover {
