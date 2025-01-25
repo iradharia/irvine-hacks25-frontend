@@ -7,16 +7,26 @@
     <script src="./script.js"></script>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
-  <body onload="getDatabaseDataAndShowOnWebsite()">
-    <div id="display">
-      Create Profile
-    </div>
-    
-    <input type="text" id="name-input" />
-    
+  
+  
 
-    <li><a href="client_pfp.html">Client Profile</a></li>
-    <li><a href = "realtor_pfp.html">Realtor Profile</a></li>
+
+  <body>
+    <!-- Button to fetch and display data -->
+    <button onclick="getDatabaseDataAndShowOnWebsite()">Get Data</button>
+  
+    <!-- Input for user name -->
+    <input type="text" id="name-input" placeholder="Enter name" />
+    <button onclick="register()">Register</button>
+  
+    <!-- Display fetched data -->
+    <div id="display"></div>
+  
+    <ul>
+      <li><a href="client_pfp.html">Client Profile</a></li>
+      <li><a href="realtor_pfp.html">Realtor Profile</a></li>
+    </ul>
   </body>
+
 </html>
 
