@@ -254,19 +254,12 @@
         </div>
 
         <div class="column-right">
-          <label for="photo">Profile Picture:</label>
-          <input
-            type="file"
-            name="photo"
-            id="photo"
-            onchange="displayProfilePic()"
-            required
-          />
+          <label for="image-url">Profile Picture URL:</label>
+          <input type="text" name="image-url" id="image-url" onchange="displayProfilePic()"required placeholder="Enter image URL"/>
           <img
             src="#"
             alt="Profile Picture"
-            style="display: none"
-            ;
+            style="display: none";
             id="profilePic"
           />
         </div>
@@ -274,7 +267,7 @@
     </div>
     <script>
       function displayProfilePic() {
-        const input = document.getElementById("photo");
+        const input = document.getElementById("image-url");
         const img = document.getElementById("profilePic");
 
         if (input.files && input.files[0]) {
