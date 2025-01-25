@@ -121,12 +121,13 @@
         </div>
 
         <div class="column-middle1">
-          <label for="budget">Budget: </label>
+          <label for="budget" >Budget: </label>
           <input
             type="text"
             name="budget"
             id="budget"
             style="margin-bottom: 10px"
+            required
           />
 
           <label for="experienceLevel">Experience Level: </label>
@@ -291,11 +292,27 @@
 
       function submitForm() {
         const formData = new FormData(document.getElementById("profileForm"));
-
         for (const pair of formData.entries()) {
           console.log(pair[0] + ": " + pair[1]);
         }
-      }
+
+        fetch("https://537e-169-234-82-73.ngrok-free.app/receive-form-data", {
+        method: 'POST',
+        headers: {
+          "ngrok-skip-browser-warning": "helloi",
+        },
+          body: (formData), 
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Response from backend:', data);
+            
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+        }
+      
     </script>
   </body>
 </html>
