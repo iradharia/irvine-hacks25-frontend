@@ -67,6 +67,27 @@
                 font-weight: bold;
             }
 
+            button {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #4caf50;
+                color: #fff;
+                padding: 12px 20 px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+
             
   
 
@@ -77,7 +98,7 @@
     </head>
     <body>
         <div class="form-container">
-            <form action="" id="profileform">
+            <form action="" id="profileForm">
                 <div class="column-left">
                     <label for="firstName">First Name: </label>
                     <input type = "text" name="firstName" id="firstName" >
@@ -187,7 +208,8 @@
                     <label for="photo">Profile Picture</label>
                     <input type="file" name="photo" id="photo" 
                     onchange="displayProfilePic()">
-                    <img src="#" alt="Profile Picture" style="display: none;" id="profilePic">
+                    <img src="#" alt="Profile Picture" style="display:
+                    none;" id="profilePic">
 
 
                 </div>
@@ -200,7 +222,7 @@
                 const input = document.getElementById('photo')
                 const img = document.getElementById('profilePic')
 
-                if (input.file && input.files[0]) {
+                if (input.files && input.files[0]) {
                     const reader = new FileReader();
 
                     reader.onload = function (e) {
@@ -209,7 +231,7 @@
 
                     };
 
-                    reader.readAsDataURL(input.file[0]);
+                    reader.readAsDataURL(input.files[0]);
                 }
             }
 
