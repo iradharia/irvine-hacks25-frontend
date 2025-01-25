@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content"width=device-width,initial-scale=1.0">
-        <title> Client Profile Form</title>
+        <title> Client Profile</title>
         <style>
 
             body {
@@ -40,29 +40,23 @@
 
             .column-left {
                 flex: 1;
-                padding-right: 10px;
+                padding-left: 20px;
             }
 
             .column-middle1 {
                 flex: 1;
-                padding-right: 20px;
+                padding-left: 20px;
             }
 
             .column-middle2 {
                 flex: 1;
-                padding-right: 20px;
+                padding-left: 20px;
                 
                 
             }
 
-            /* .column-middle3 {
-                flex: 1;
-                padding-right: 20px;
-            } */
-
             .column-right {
                 flex: 1;
-                padding-right: 20px;
                 padding-left: 20px;
             }
 
@@ -82,7 +76,7 @@
         </style>
     </head>
     <body>
-        <div class="form-container" style="flex: auto;">
+        <div class="form-container">
             <form action="" id="profileform">
                 <div class="column-left">
                     <label for="firstName">First Name: </label>
@@ -116,6 +110,8 @@
                         <option value="french"> French</option>
                     </select>
 
+                    <button type="button" onclick="submitForm()">Submit</button>
+
                 </div>
 
 
@@ -125,14 +121,14 @@
                     <input type = "text" name="budget" id="budget" >
 
                     <label for="experienceLevel">Experience Level: </label>
-                    <select name="experienceLevel" id="experienceLevel" style="margin-bottom: 10px;">
+                    <select name="experienceLevel" id="experienceLevel">
                         <option value="first-time buyer"> First-Time Buyer</option>
                         <option value="experienced buyer"> Experienced Buyer</option>
                         <option value="investment properties"> Investment Properties</option>
                     </select>
 
                     <label for="timeline">Timeline: </label>
-                    <select name="timeline" id="timeline" style="margin-bottom: 10px;">
+                    <select name="timeline" id="timeline">
                         <option value="immediate (0-3m)"> Immediate (0 - 3 months)</option>
                         <option value="medium-long (3-12m)"> Medium - Long (3 - 12 months)</option>
                         <option value="future (12+)"> Future (12+) </option>
@@ -140,7 +136,7 @@
                     </select>
 
                     <label for="personality">Your Realtor's Personality (Select 3):</label>
-                    <select name="personality" id="personality" multiple style="margin-top: 5x;">
+                    <select name="personality" id="personality" multiple">
                       <option value="knowlegeable">Knowlegeable</option>
                       <option value="confrontational">Confrontational</option>
                       <option value="enthusiastic">Enthusiastic</option>
@@ -193,12 +189,38 @@
                     onchange="displayProfilePic()">
                     <img src="#" alt="Profile Picture" style="display: none;" id="profilePic">
 
-                    <button type="button" onclick="submitForm()">Submit</button>
+
                 </div>
             </form>
         </div>
 
         <script>
+
+            function displayProfilePic() {
+                const input = document.getElementById('photo')
+                const img = document.getElementById('profilePic')
+
+                if (input.file && input.files[0]) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        img.src = e.target.result;
+                        img.style.display = 'block'
+
+                    };
+
+                    reader.readAsDataURL(input.file[0]);
+                }
+            }
+
+            function submitForm() {
+                const formData = new FormData(document.getElementById("profileForm"));
+
+                for (const pair of formData.entries()) {
+                    console.log(pair[0] + ': ' + pair[1])
+                }
+            }
+
 
         </script>
 
