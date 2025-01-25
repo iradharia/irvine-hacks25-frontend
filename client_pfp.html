@@ -8,8 +8,8 @@
         <style>
 
             body {
-                font-family:Georgia, 'Times New Roman', Times, serif;
-                background-color:lightblue;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color:lightgray;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -47,7 +47,11 @@
             .column-middle2 {
                 flex: 1;
                 padding-right: 20px;
+                
+                
             }
+
+            
 
             .column-middle3 {
                 flex: 1;
@@ -65,6 +69,12 @@
                 color: #333;
                 font-weight: bold;
             }
+
+            
+
+            
+
+            
 
 
         </style>
@@ -93,28 +103,10 @@
 
                     <label for="state">State: </label>
                     <input type = "text" name="state" id="state" >
-                    
-                    <label for="budget">Budget: </label>
-                    <input type = "text" name="budget" id="budget" >
-
-                    <label for="experienceLevel">Experience Level: </label>
-                    <select name="experienceLevel" id="experienceLevel">
-                        <option value="first-time buyer"> First-Time Buyer</option>
-                        <option value="experienced buyer"> Experienced Buyer</option>
-                        <option value="investment properties"> Investment Properties</option>
-                    </select>
-
-                    <label for="timeline">Timeline: </label>
-                    <select name="timeline" id="timeline">
-                        <option value="immediate (0-3m)"> Immediate (0 - 3 months)</option>
-                        <option value="medium-long (3-12m)"> Medium - Long (3 - 12 months)</option>
-                        <option value="future (12+)"> Future (12+) </option>
-                        <option value="no timeline"> No timeline</option>
-                    </select>
 
 
-                    <label for="cultural">Cultural: </label>
-                    <select name="cultural" id="cultural">
+                    <label for="language">Language: </label>
+                    <select name="language" id="language">
                         <option value="english"> English</option>
                         <option value="spanish"> Spanish </option>
                         <option value="hindi"> Hindi </option>
@@ -128,9 +120,29 @@
                 </div>
 
                 <div class="column-middle1">
+
+                    <label for="budget">Budget: </label>
+                    <input type = "text" name="budget" id="budget" >
+
+                    <label for="experienceLevel">Experience Level: </label>
+                    <select name="experienceLevel" id="experienceLevel" >
+                        <option value="first-time buyer"> First-Time Buyer</option>
+                        <option value="experienced buyer"> Experienced Buyer</option>
+                        <option value="investment properties"> Investment Properties</option>
+                    </select>
+
+                    <label for="timeline">Timeline: </label>
+                    <select name="timeline" id="timeline" style="margin-bottom: 10px;">
+                        <option value="immediate (0-3m)"> Immediate (0 - 3 months)</option>
+                        <option value="medium-long (3-12m)"> Medium - Long (3 - 12 months)</option>
+                        <option value="future (12+)"> Future (12+) </option>
+                        <option value="no timeline"> No timeline</option>
+                    </select>
+
+
                     <label for="propertyType">Property Type</label>
                     <div class="multi-select">
-                      <label><input type="checkbox" name="specialization" value="luxury"> Luxury</label>
+                      <label><input type="checkbox" name="property" value="luxury"> Luxury</label>
                       <label><input type="checkbox" name="specialization" value="condo"> Condo </label>
                       <label><input type="checkbox" name="specialization" value="townhouse"> Townhouse</label>
                       <label><input type="checkbox" name="specialization" value="apartment"> Apartment</label>
