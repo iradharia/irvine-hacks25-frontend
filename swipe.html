@@ -1,47 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Swiper</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        min-height: 70vh;
+        width: 30%;
+}
 
-  <body>
-    <ion-icon id="dislike" name="heart-dislike"></ion-icon>
-    <div id="swiper">
-      <div class="card" style="--i: 0">
-        <img
-          src="https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy"
-          alt=""
-        />
-      </div>
-      <div class="card" style="--i: 1">
-        <img
-          src="https://www.law.uci.edu/faculty/full-time/images/520x580/gillman.jpg"
-          alt=""
-        />
-      </div>
-      <div class="card" style="--i: 2">
-        <img src="https://source.unsplash.com/random/1000x1000/?ocean" alt="" />
-      </div>
-      <div class="card" style="--i: 3">
-        <img
-          src="https://source.unsplash.com/random/1000x1000/?moutain"
-          alt=""
-        />
-      </div>
-      <div class="card" style="--i: 4">
-        <img
-          src="https://source.unsplash.com/random/1000x1000/?forest"
-          alt=""
-        />
-      </div>
-    </div>
-    <ion-icon id="like" name="heart"></ion-icon>
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
-<<<<<<< Updated upstream
 .container {
   padding: 2px 16px;
 }
@@ -51,7 +32,7 @@
 
 <h2>Card</h2>
 
-<div class="card1">
+<div class="card">
   <div class="container">
 
     <h4><b>John Doe</b></h4> 
@@ -59,230 +40,5 @@
   </div>
 </div>
 
-<div class="card2>
-    <div class="container">
-  
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-
-      
-    </div>
-  </div>
-
-  <div class="card3">
-    <div class="container">
-  
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-  </div>
-
-  <div class="card4">
-    <div class="container">
-  
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
-    </div>
-
-
-    <h1>Client Data</h1>
-    <button onclick="displaySecond()">Show Client Data</button>
-    <div id="clientData"></div>
-  </div>
-
-
-<script>
-    const data = [
-      {
-        "firstName": "emily",
-        "lastName": "davis",
-        "email": "emily.davis@gmail.com",
-        "phone": "6123456789",
-        "city": "minneapolis",
-        "state": "minnesota",
-        "budget": "500000",
-        "experienceLevel": "first-time buyer",
-        "timeline": "immediate (0-3m)",
-        "pronouns": "she/her",
-        "language": "english",
-        "propertyType": ["single", "townhouse"],
-        "lifestyle": ["suburban", "near schools and parks", "pet-friendly"],
-        "personality": ["enthusiastic", "attentive", "empathetic"]
-      },
-      {
-        "firstName": "omar",
-        "lastName": "alvarez",
-        "email": "omar.alvarez@gmail.com",
-        "phone": "3059876543",
-        "city": "miami",
-        "state": "florida",
-        "budget": "700000",
-        "experienceLevel": "experienced buyer",
-        "timeline": "medium-long (3-12m)",
-        "pronouns": "he/him",
-        "language": "spanish",
-        "propertyType": ["luxury", "multi"],
-        "lifestyle": ["urban", "commute-friendly", "near shopping and dining"],
-        "personality": ["knowledgeable", "adaptable", "people-oriented"]
-      },
-      {
-        "firstName": "zoe",
-        "lastName": "cooper",
-        "email": "zoe.cooper@gmail.com",
-        "phone": "3121234567",
-        "city": "chicago",
-        "state": "illinois",
-        "budget": "600000",
-        "experienceLevel": "first-time buyer",
-        "timeline": "immediate (0-3m)",
-        "pronouns": "she/her",
-        "language": "english",
-        "propertyType": ["condo", "townhouse"],
-        "lifestyle": ["urban", "commute-friendly", "near shopping and dining"],
-        "personality": ["reserved", "attentive", "empathetic"]
-      },
-      {
-        "firstName": "joseph",
-        "lastName": "watson",
-        "email": "joseph.watson@gmail.com",
-        "phone": "4152345678",
-        "city": "portland",
-        "state": "oregon",
-        "budget": "450000",
-        "experienceLevel": "first-time buyer",
-        "timeline": "medium-long (3-12m)",
-        "pronouns": "he/him",
-        "language": "english",
-        "propertyType": ["single", "luxury"],
-        "lifestyle": ["suburban", "near schools and parks", "pet-friendly"],
-        "personality": ["attentive", "enthusiastic", "empathetic"]
-      }
-    ];
-
-    const [first, second, third, fourth] = data
-
-    // Function to display each client's data separately
-    function displayFirst() {
-      const clientDataDiv = document.getElementById("clientData");
-
-      // HTML content for each client
-      const firstContent = `
-        <div class="client">
-          <h3>${first.firstName} ${first.lastName}</h3>
-          <p>Email: ${first.email}</p>
-          <p>Phone: ${first.phone}</p>
-          <p>Location: ${first.city}, ${first.state}</p>
-          <p>Budget: $${first.budget}</p>
-          <p>Pronouns: ${first.pronouns}</p>
-          <p>Property Type: ${first.propertyType.join(", ")}</p>
-          <p>Lifestyle: ${first.lifestyle.join(", ")}</p>
-          <p>Personality: ${first.personality.join(", ")}</p>
-          <hr>
-        </div>
-      `;
-
-      // Append the content for each client
-      clientDataDiv.innerHTML = firstContent;
-    }
-
-    function displayFirst() {
-      const clientDataDiv = document.getElementById("clientData");
-
-      // HTML content for each client
-      const firstContent = `
-        <div class="client">
-          <h3>${first.firstName} ${first.lastName}</h3>
-          <p>Phone: ${first.phone}</p>
-          <p>Location: ${first.city}, ${first.state}</p>
-          <p>Budget: $${first.budget}</p>
-          <p>Property Type: ${first.propertyType.join(", ")}</p>
-          <hr>
-        </div>
-      `;
-
-      // Append the content for each client
-      clientDataDiv.innerHTML = firstContent;
-    }
-
-    function displaySecond() {
-      const clientDataDiv = document.getElementById("clientData");
-
-      // HTML content for each client
-      const secondContent = `
-        <div class="client">
-          <h3>${second.firstName} ${second.lastName}</h3>
-          <p>Phone: ${second.phone}</p>
-          <p>Location: ${second.city}, ${second.state}</p>
-          <p>Budget: $${second.budget}</p>
-          <p>Property Type: ${second.propertyType.join(", ")}</p>
-          <hr>
-        </div>
-      `;
-
-      // Append the content for each client
-      clientDataDiv.innerHTML = secondContent;
-    }
-
-    function displayThird() {
-      const clientDataDiv = document.getElementById("clientData");
-
-      // HTML content for each client
-      const thirdContent = `
-        <div class="client">
-          <h3>${third.firstName} ${third.lastName}</h3>
-          <p>Phone: ${third.phone}</p>
-          <p>Location: ${third.city}, ${third.state}</p>
-          <p>Budget: $${third.budget}</p>
-          <p>Property Type: ${third.propertyType.join(", ")}</p>
-          <hr>
-        </div>
-      `;
-
-      // Append the content for each client
-      clientDataDiv.innerHTML = thirdContent;
-    }
-
-    function displayFourth() {
-      const clientDataDiv = document.getElementById("clientData");
-
-      // HTML content for each client
-      const fourthContent = `
-        <div class="client">
-          <h3>${fourth.firstName} ${fourth.lastName}</h3>
-          <p>Phone: ${fourth.phone}</p>
-          <p>Location: ${fourth.city}, ${fourth.state}</p>
-          <p>Budget: $${fourth.budget}</p>
-          <p>Property Type: ${fourth.propertyType.join(", ")}</p>
-          <hr>
-        </div>
-      `;
-
-      // Append the content for each client
-      clientDataDiv.innerHTML = fourthContent;
-    }
-
-    
-  </script>
-</script>
 </body>
 </html> 
-
-
-
-
-
-
-=======
-    <script src="./card.js"></script>
-    <script src="./script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
-</html>
->>>>>>> Stashed changes
