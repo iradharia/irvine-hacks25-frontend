@@ -12,10 +12,11 @@ body {
 }
 
 body {
-  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  background: #add8e6
+  align-self: auto; */
+  background: rgb(255, 255, 255)
 }
 
 #swiper {
@@ -37,7 +38,7 @@ body {
   filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.5));
   cursor: pointer;
   user-select: none;
-  transition: transform 0.5s;
+  transition: transform 0.2s ease-in-out; /* Reduced duration for quicker feedback */
 }
 
 .card img {
@@ -68,20 +69,20 @@ body {
 }
 
 #like {
-  color: red;
+  color: rgb(218, 165, 32);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 #dislike {
-  color: #ccc;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(213, 193, 143);
+  background-color: rgba(112, 111, 111, 0.5);
 }
 
 @keyframes animation1 {
 
   0%,
   100% {
-    opacity: 0.2;
+    opacity: 1;
   }
 
   50% {
@@ -93,7 +94,7 @@ body {
 
   0%,
   100% {
-    opacity: 0.2;
+    opacity: 1;
   }
 
   50% {
