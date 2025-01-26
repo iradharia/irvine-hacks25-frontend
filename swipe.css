@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: lightblue
+  background: rgb(255, 255, 255)
 }
 
 #swiper {
@@ -69,12 +69,12 @@ body {
 }
 
 #like {
-  color: red;
+  color: rgb(218, 165, 32);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 #dislike {
-  color: #ccc;
+  color: rgb(188, 172, 132);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -82,7 +82,7 @@ body {
 
   0%,
   100% {
-    opacity: 0.2;
+    opacity: 1;
   }
 
   50% {
@@ -94,7 +94,7 @@ body {
 
   0%,
   100% {
-    opacity: 0.2;
+    opacity: 1;
   }
 
   50% {
