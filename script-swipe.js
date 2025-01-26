@@ -4,18 +4,6 @@ const like = document.querySelector("#like");
 const dislike = document.querySelector("#dislike");
 const clientDataDiv = document.getElementById("clientData");
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-// constants
-const urls = [
-  "https://kimnicholsmd.com/wp-content/uploads/2018/05/Emily-Headshot.jpg",
-  "https://media.bizj.us/view/img/12489157/omaralvarez-phoenixchildrensboardofdirectors*1500xx2831-2831-0-0.jpg",
-  "https://www.blackburnprize.org/wp-content/uploads/2024/06/Zoe-Cooper-Individual-Page.jpg",
-  "https://img.freepik.com/free-photo/smiley-man-wearing-white-shirt-medium-shot_23-2149345111.jpg",
-  ];
-=======
-=======
->>>>>>> Stashed changes
 // Constants
 const clients = [
   { firstName: "Emily", lastName: "Davis", phone: "6123456789", location: "Minneapolis, Minnesota", budget: "500,000", propertyType: ["Single", "Townhouse"] },
@@ -23,7 +11,6 @@ const clients = [
   { firstName: "Zoe", lastName: "Cooper", phone: "3121234567", location: "Chicago, Illinois", budget: "600,000", propertyType: ["Condo", "Townhouse"] },
   { firstName: "Joseph", lastName: "Watson", phone: "4152345678", location: "Portland, Oregon", budget: "450,000", propertyType: ["Single", "Luxury"] },
 ];
->>>>>>> Stashed changes
 
 // Variables
 let currentCardIndex = 0;
