@@ -5,12 +5,11 @@ const dislike = document.querySelector("#dislike");
 
 // constants
 const urls = [
-  "https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy",
-  "https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy",
-  "https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy",
-  "https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy",
-  "https://images.unsplash.com/photo-1498462440456-0dba182e775b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BsYXNofGVufDB8fDB8fHwy",
-];
+  "https://kimnicholsmd.com/wp-content/uploads/2018/05/Emily-Headshot.jpg",
+  "https://media.bizj.us/view/img/12489157/omaralvarez-phoenixchildrensboardofdirectors*1500xx2831-2831-0-0.jpg",
+  "https://www.blackburnprize.org/wp-content/uploads/2024/06/Zoe-Cooper-Individual-Page.jpg",
+  "https://img.freepik.com/free-photo/smiley-man-wearing-white-shirt-medium-shot_23-2149345111.jpg",
+  ];
 
 // variables
 let cardCount = 0;
