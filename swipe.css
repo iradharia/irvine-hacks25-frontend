@@ -12,11 +12,11 @@ body {
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   /* display: flex;
   justify-content: space-evenly;
   align-self: auto; */
-  background: rgb(255, 255, 255)
+  background: rgb(255, 255, 255);
 }
 
 #swiper {
@@ -35,7 +35,8 @@ body {
   position: absolute;
   border-radius: 20px;
   overflow: hidden;
-  transform: translateZ(calc(-30px * var(--i))) translateY(calc(-20px * var(--i))) rotate(calc(-2deg * var(--i)));
+  transform: translateZ(calc(-30px * var(--i)))
+    translateY(calc(-20px * var(--i))) rotate(calc(-2deg * var(--i)));
   filter: drop-shadow(1px 1px 10px rgba(45, 45, 45, 0.5));
   cursor: pointer;
   user-select: none;
@@ -53,7 +54,7 @@ body {
 #dislike {
   cursor: pointer;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
   font-size: 16vh;
   border-radius: 50%;
   padding: 20px;
@@ -85,7 +86,6 @@ body {
 }
 
 @keyframes animation1 {
-
   0%,
   100% {
     opacity: 1;
@@ -97,7 +97,6 @@ body {
 }
 
 @keyframes animation2 {
-
   0%,
   100% {
     opacity: 1;
