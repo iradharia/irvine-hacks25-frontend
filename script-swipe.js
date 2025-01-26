@@ -5,6 +5,7 @@ const dislike = document.querySelector("#dislike");
 const clientDataDiv = document.getElementById("clientData");
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // constants
 const urls = [
   "https://kimnicholsmd.com/wp-content/uploads/2018/05/Emily-Headshot.jpg",
@@ -13,6 +14,8 @@ const urls = [
   "https://img.freepik.com/free-photo/smiley-man-wearing-white-shirt-medium-shot_23-2149345111.jpg",
   ];
 =======
+=======
+>>>>>>> Stashed changes
 // Constants
 const clients = [
   { firstName: "Emily", lastName: "Davis", phone: "6123456789", location: "Minneapolis, Minnesota", budget: "500,000", propertyType: ["Single", "Townhouse"] },
