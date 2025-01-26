@@ -175,8 +175,8 @@
 
         <div class="column-middle2">
           <label for="propertyType">Property Type</label>
-          <div class="multi-select">
-            <label style="font-weight: normal"
+          <div class="multi-select" >
+            <label style="font-weight: normal" 
               ><input type="checkbox" name="propertyType" value="luxury" required/>
               Luxury</label
             >
@@ -256,17 +256,12 @@
         </div>
 
         <div class="column-right">
-          <label for="photo">Profile Picture</label>
-          <input
-            type="file"
-            name="photo"
-            id="photo"
-            onchange="displayProfilePic()"
-          />
+          <label for="image-url">Profile Picture URL:</label>
+          <input type="text" name="image-url" id="image-url" onchange="displayProfilePic()"required placeholder="Enter image URL"/>
           <img
             src="#"
             alt="Profile Picture"
-            style="display: none"
+            style="display: none";
             id="profilePic"
           />
         </div>
@@ -275,18 +270,16 @@
 
     <script>
       function displayProfilePic() {
-        const input = document.getElementById("photo");
+        const input = document.getElementById("image-url");
         const img = document.getElementById("profilePic");
 
-        if (input.files && input.files[0]) {
-          const reader = new FileReader();
+        const imageUrl = input.value; // Get the URL from the input field
 
-          reader.onload = function (e) {
-            img.src = e.target.result;
-            img.style.display = "block";
-          };
-
-          reader.readAsDataURL(input.files[0]);
+        if (imageUrl) {
+          img.src = imageUrl; // Set the src of the image to the URL
+          img.style.display = "block"; // Display the image
+        } else {
+          img.style.display = "none"; // Hide the image if no URL is entered
         }
       }
 
