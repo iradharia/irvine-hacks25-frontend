@@ -1,197 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realtor Profile</title>
-    
-    <style>
-      body {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        background-color: #fff9f5;
-        margin: 0;
-        padding: 0;
-      }
-      .form-container {
-        margin: 0 20px;
-      }
 
-      form {
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: 20px;
-        display: flex;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Realtor Profile</title>
 
-      .column-left {
-        flex: 1;
-        padding-right: 20px;
-      }
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: #fff9f5;
+      margin: 0;
+      padding: 0;
+    }
 
-      .column-right {
-        flex: 1;
-        padding-left: 20px;
-      }
+    .form-container {
+      margin: 0 20px;
+    }
 
-      .middle1 {
-        flex: 1;
-        padding-left: 20px;
-      }
+    form {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 20px;
+      display: flex;
+    }
 
-      .middle2 {
-        flex: 1;
-        padding-left: 20px;
-      }
+    .column-left {
+      flex: 1;
+      padding-right: 20px;
+    }
 
-      label {
-        display: block;
-        margin-bottom: 8px;
-        color: #333;
-        font-weight: bold;
-      }
+    .column-right {
+      flex: 1;
+      padding-left: 20px;
+    }
 
-      button {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #071552;
-        color: #fff;
-        padding: 12px 20 px;
-        border: none;
-        border-radius: 4px;
-      }
+    .middle1 {
+      flex: 1;
+      padding-left: 20px;
+    }
 
-      button:hover {
-        background-color: #071552;
-      }
+    .middle2 {
+      flex: 1;
+      padding-left: 20px;
+    }
 
-      img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-        border-radius: 5px;
-      }
-      input[type="text"] {
-        width: 100%;
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: bold;
+    }
 
-        margin: 4px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 1px solid #e2b969;
-      }
-    </style>
-    <style>
-      body {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+    button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #071552;
+      color: #fff;
+      padding: 12px 20 px;
+      border: none;
+      border-radius: 4px;
+    }
 
-.topnav {
-  overflow: hidden;
-  background-color: goldenrod;
-}
+    button:hover {
+      background-color: #071552;
+    }
 
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+    input[type="text"] {
+      width: 100%;
 
-.topnav a.active {
-  color: black;
-}
-    </style>
-  </head>
-  <body>
-    <div class="topnav">
-      <a class="active" href="landing_page.html">Home</a>
-      <a href="realtor_pfp.html">Create Realtor Profile</a>
-      <a href="client_pfp.html">Create Client Profile</a>
-      <a href="swipe.html">Find Your Match</a>
-    </div>
+      margin: 4px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid #e2b969;
+    }
+  </style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-    <h1 style="text-align: center; margin-bottom: 50px; color: #071552;">
-      Realtor Profile
-    </h1>
+    .topnav {
+      overflow: hidden;
+      background-color: goldenrod;
+    }
 
-    <div class="form-container">
-      <form action="" id="profileForm">
-        <div class="column-left">
-          <label for="firstName">First Name:</label>
-          <input type="text" name="firstName" id="firstName" required />
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="lastName" id="lastName" required />
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-          <label for="pronoun">Pronoun:</label>
-          <input type="text" name="pronoun" id="pronoun" required />
+    .topnav a.active {
+      color: black;
+    }
+  </style>
+</head>
 
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email" required />
+<body>
+  <div class="topnav">
+    <a class="active" href="landing_page.html">Home</a>
+    <a href="realtor_pfp.html">Create Realtor Profile</a>
+    <a href="client_pfp.html">Create Client Profile</a>
+    <a href="swipe.html">Find Your Match</a>
+  </div>
 
-          <label for="phone">Phone:</label>
-          <input type="text" name="phone" id="phone" required />
+  <h1 style="text-align: center; margin-bottom: 50px; color: #071552;">
+    Realtor Profile
+  </h1>
 
-          <label for="city">City:</label>
-          <input type="text" name="city" id="city" required />
+  <div class="form-container">
+    <form action="" id="profileForm">
+      <div class="column-left">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required />
 
-          <label for="state">State:</label>
-          <input type="text" name="state" id="state" required />
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required />
 
-          <button type="button" onclick="submitForm()">Submit</button>
-    </div>
+        <label for="pronoun">Pronoun:</label>
+        <input type="text" name="pronoun" id="pronoun" required />
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" required />
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required />
+
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required />
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
 
       <div class="middle1">
-          <label for="experienceLevel">Experience Level:</label>
-          <select
-            name="experienceLevel"
-            id="experienceLevel"
-            style="margin-bottom: 10px"
-          >
-            <option value="first-time buyer">First Time Buyer</option>
-            <option value="experienced buyer">Experienced Buyer</option>
-            <option value="investment properties">Investment Properties</option>
-          </select>
+        <label for="experienceLevel">Experience Level:</label>
+        <select name="experienceLevel" id="experienceLevel" style="margin-bottom: 10px">
+          <option value="first-time buyer">First Time Buyer</option>
+          <option value="experienced buyer">Experienced Buyer</option>
+          <option value="investment properties">Investment Properties</option>
+        </select>
 
-          <label for="timeine">Timeline:</label>
-          <select
-            name="timeline"
-            id="timeline"
-            style="margin-bottom: 10px"
-            required
-          >
-            <option value="immediate">Immediate (0-3mon)</option>
-            <option value="medium-long">Medium-Long (3-12mon)</option>
-            <option value="future">Future (12+)</option>
-            <option value="none">No Timeline</option>
-          </select>
+        <label for="timeine">Timeline:</label>
+        <select name="timeline" id="timeline" style="margin-bottom: 10px" required>
+          <option value="immediate">Immediate (0-3mon)</option>
+          <option value="medium-long">Medium-Long (3-12mon)</option>
+          <option value="future">Future (12+)</option>
+          <option value="none">No Timeline</option>
+        </select>
 
-          <label for="language">Language:</label>
-          <select
-            name="Language"
-            id="language"
-            style="margin-bottom: 10px"
-            required
-          >
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-            <option value="hindi">Hindi</option>
-            <option value="french">French</option>
-            <option value="arabic">Arabic</option>
-          </select>
+        <label for="language">Language:</label>
+        <select name="Language" id="language" style="margin-bottom: 10px" required>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="hindi">Hindi</option>
+          <option value="french">French</option>
+          <option value="arabic">Arabic</option>
+        </select>
 
-          <label for="lifestyle">Lifestyle Preferences:</label>
+        <!-- <label for="lifestyle">Lifestyle Preferences:</label>
           <select
             name="lifestyle"
             id="lifestyle"
@@ -205,215 +195,114 @@
             <option value="commuter">Commuter Friendly</option>
             <option value="pets">Pet Friendly</option>
             <option value="shopping-dining">Near Shopping & Dining</option>
-          </select>
+          </select> -->
 
-          <label for="personality">Personality Traits (Select 3):</label>
-          <select
-            name="personality"
-            id="personality"
-            multiple
-            style="margin-bottom: 10px"
-            required
-          >
-            <option value="knowlegeable">Knowlegeable</option>
-            <option value="confrontational">Confrontational</option>
-            <option value="enthusiastic">Enthusiastic</option>
-            <option value="reserved">Reserved</option>
-            <option value="empathetic">Empathetic</option>
-            <option value="attentive">Attentive</option>
-            <option value="adaptable">Adaptable</option>
-            <option value="people-oriented">People-Oriented</option>
-          </select>
+        <label for="personality">Personality Traits (Select 3):</label>
+        <select name="personality" id="personality" multiple style="margin-bottom: 10px" required>
+          <option value="knowlegeable">Knowlegeable</option>
+          <option value="confrontational">Confrontational</option>
+          <option value="enthusiastic">Enthusiastic</option>
+          <option value="reserved">Reserved</option>
+          <option value="empathetic">Empathetic</option>
+          <option value="attentive">Attentive</option>
+          <option value="adaptable">Adaptable</option>
+          <option value="people-oriented">People-Oriented</option>
+        </select>
+      </div>
+
+      <!-- multiple with 3 limit -->
+
+      <div class="middle2">
+        <label for="propertyType">Property Type:</label>
+        <div class="multi-select">
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="luxury" required />
+            Luxury</label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="condo" required />
+            Condo
+          </label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="townhouse" required />
+            Townhouse</label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="apartment" required />
+            Apartment</label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="single" required />
+            Single</label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="multi" required />
+            Married</label>
+          <label style="font-weight: normal"><input type="checkbox" name="specialization" value="multi" required />
+            Family</label>
         </div>
+      </div>
 
-        <!-- multiple with 3 limit -->
-
-        <div class="middle2">
-          <label for="propertyType">Property Type:</label>
-          <div class="multi-select">
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="luxury"
-                required
-              />
-              Luxury</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="condo"
-                required
-              />
-              Condo
-            </label>
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="townhouse"
-                required
-              />
-              Townhouse</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="apartment"
-                required
-              />
-              Apartment</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="single"
-                required
-              />
-              Single</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="multi"
-                required
-              />
-              Married</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="specialization"
-                value="multi"
-                required
-              />
-              Family</label
-            >
-          </div>
+      <div class="middle3">
+        <label for="lifestylePreferences">Lifestyle Preferences</label>
+        <div class="multi-select">
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="urban" required />
+            Urban</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="suburban" required />
+            Suburban</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="rural" required />
+            Rural</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="near schools and parks"
+              required />
+            Near Schools and Parks</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="commute-friendly"
+              required />
+            Commuter Friendly</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="pet-friendly" required />
+            Pet-friendly</label>
+          <label style="font-weight: normal"><input type="checkbox" name="lifestyle" value="near shopping and dining"
+              required />
+            Near Shopping and Dining</label>
         </div>
+      </div>
 
-        <div class="middle3">
-          <label for="lifestylePreferences">Lifestyle Preferences</label>
-          <div class="multi-select">
-            <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="urban" required />
-              Urban</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="lifestyle"
-                value="suburban"
-                required
-              />
-              Suburban</label
-            >
-            <label style="font-weight: normal"
-              ><input type="checkbox" name="lifestyle" value="rural" required />
-              Rural</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="lifestyle"
-                value="near schools and parks"
-                required
-              />
-              Near Schools and Parks</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="lifestyle"
-                value="commute-friendly"
-                required
-              />
-              Commuter Friendly</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="lifestyle"
-                value="pet-friendly"
-                required
-              />
-              Pet-friendly</label
-            >
-            <label style="font-weight: normal"
-              ><input
-                type="checkbox"
-                name="lifestyle"
-                value="near shopping and dining"
-                required
-              />
-              Near Shopping and Dining</label
-            >
-          </div>
-        </div>
+      <div class="column-right">
+        <label for="image-url">Profile Picture URL:</label>
+        <input type="text" name="image-url" id="image-url" onchange="displayProfilePic()" required
+          placeholder="Enter image URL" />
+        <img src="#" alt="Profile Picture" style="display: none" ; id="profilePic" />
+      </div>
+    </form>
+  </div>
+  <script>
+    function displayProfilePic() {
+      const input = document.getElementById("image-url");
+      const img = document.getElementById("profilePic");
 
-        <div class="column-right">
-          <label for="image-url">Profile Picture URL:</label>
-          <input
-            type="text"
-            name="image-url"
-            id="image-url"
-            onchange="displayProfilePic()"
-            required
-            placeholder="Enter image URL"
-          />
-          <img
-            src="#"
-            alt="Profile Picture"
-            style="display: none"
-            ;
-            id="profilePic"
-          />
-        </div>
-      </form>
-    </div>
-    <script>
-      function displayProfilePic() {
-        const input = document.getElementById("image-url");
-        const img = document.getElementById("profilePic");
+      if (input.files && input.files[0]) {
+        const reader = new FileReader();
 
-        if (input.files && input.files[0]) {
-          const reader = new FileReader();
+        reader.onload = function (e) {
+          img.src = e.target.result;
+          img.style.display = "block";
+        };
 
-          reader.onload = function (e) {
-            img.src = e.target.result;
-            img.style.display = "block";
-          };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
 
-          reader.readAsDataURL(input.files[0]);
-        }
+    function submitForm() {
+      const formData = new FormData(document.getElementById("profileForm"));
+      for (const pair of formData.entries()) {
+        console.log(pair[0] + ": " + pair[1]);
       }
 
-      function submitForm() {
-        const formData = new FormData(document.getElementById("profileForm"));
-        for (const pair of formData.entries()) {
-          console.log(pair[0] + ": " + pair[1]);
-        }
-
-        fetch("https://537e-169-234-82-73.ngrok-free.app/receive-form-data", {
-          method: "POST",
-          headers: {
-            "ngrok-skip-browser-warning": "helloi",
-          },
-          body: formData,
+      fetch("https://537e-169-234-82-73.ngrok-free.app/receive-form-data", {
+        method: "POST",
+        headers: {
+          "ngrok-skip-browser-warning": "helloi",
+        },
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Response from backend:", data);
         })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Response from backend:", data);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
-      }
-    </script>
-  </body>
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+  </script>
+</body>
+
 </html>
