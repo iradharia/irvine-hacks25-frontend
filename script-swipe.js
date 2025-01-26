@@ -51,13 +51,17 @@ function handleSwipe(card, direction) {
 }
 
 function addSwipeEvents(card, index) {
-  let startX = 0;
-  let currentX = 0;
-
-  const handleTouchStart = (e) => {
-    startX = e.touches[0].clientX;
-    card.style.transition = "none";
-  };
+    let startX = 0;
+    let currentX = 0;
+    let startTime = 0;
+    const swipeThreshold = 100; // Pixels to consider a valid swipe
+    const swipeSpeedThreshold = 0.5; // Minimum speed (pixels/ms) for a swipe
+  
+    const handleTouchStart = (e) => {
+      startX = e.touches[0].clientX;
+      startTime = Date.now(); // Record the swipe start time
+      card.style.transition = "none";
+    };
 
   const handleTouchMove = (e) => {
     currentX = e.touches[0].clientX;
@@ -68,11 +72,15 @@ function addSwipeEvents(card, index) {
 
   const handleTouchEnd = () => {
     const deltaX = currentX - startX;
-    card.style.transition = "transform 0.3s";
+    const timeElapsed = Date.now() - startTime; // Calculate swipe duration
+    const swipeSpeed = Math.abs(deltaX) / timeElapsed; // Pixels per millisecond
 
-    if (Math.abs(deltaX) > 100) {
+    if (Math.abs(deltaX) > swipeThreshold || swipeSpeed > swipeSpeedThreshold) {
+      // Trigger swipe if threshold or speed is met
       handleSwipe(card, deltaX > 0 ? 1 : -1);
     } else {
+      // Reset position if swipe is invalid
+      card.style.transition = "transform 0.3s";
       card.style.transform = "translate(0, 0) rotate(0)";
     }
   };
@@ -86,6 +94,7 @@ function addSwipeEvents(card, index) {
   card.addEventListener("mousedown", (e) => {
     isMouseDown = true;
     startX = e.clientX;
+    startTime = Date.now();
     card.style.transition = "none";
   });
   card.addEventListener("mousemove", (e) => {
