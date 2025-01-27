@@ -6,10 +6,10 @@ const clientDataDiv = document.getElementById("clientData");
 
 // Constants
 const clients = [
-  { firstName: "Emily", lastName: "Davis", phone: "6123456789", location: "Minneapolis, Minnesota", budget: "500,000", propertyType: ["Single", "Townhouse"] },
-  { firstName: "Omar", lastName: "Alvarez", phone: "3059876543", location: "Miami, Florida", budget: "700,000", propertyType: ["Luxury", "Multi"] },
-  { firstName: "Zoe", lastName: "Cooper", phone: "3121234567", location: "Chicago, Illinois", budget: "600,000", propertyType: ["Condo", "Townhouse"] },
-  { firstName: "Joseph", lastName: "Watson", phone: "4152345678", location: "Portland, Oregon", budget: "450,000", propertyType: ["Single", "Luxury"] },
+  { firstName: "Emily", lastName: "Davis", phone: "6123456789", location: "Sunnyvale, California", budget: "500,000", propertyType: ["Luxury", "Townhouse"] },
+  { firstName: "Omar", lastName: "Alvarez", phone: "3059876543", location: "San Jose, California", budget: "700,000", propertyType: ["Luxury", "Multi"] },
+  { firstName: "Zoe", lastName: "Cooper", phone: "3121234567", location: "Los Angeles, California", budget: "600,000", propertyType: ["Condo", "Townhouse"] },
+  { firstName: "Joseph", lastName: "Watson", phone: "4152345678", location: "Bakersfield, California", budget: "450,000", propertyType: ["Single", "Luxury"] },
 ];
 
 // Variables
